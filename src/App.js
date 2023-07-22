@@ -1,9 +1,11 @@
 import './App.css';
+import Grid from './component/grid/Grid';
+
 
 function App() {
   return (
     <>
-    <h1>Hello</h1>
+   <Grid numberOfCards={9}/>
     </>
   );
 }
