@@ -1,10 +1,25 @@
+.grid-wrapper{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 .grid{
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 250px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap:0px;
 }
 .turn-heighlight{
     color: white;
+}
+.reset{
+    background-color: #5eda87;
+    color: black;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: larger;
 }

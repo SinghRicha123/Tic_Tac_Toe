@@ -1,16 +1,17 @@
 import Icon from '../icon/Icon';
 import './card.css'
 
-function Card({player , onPlay , index}){
+function Card({gameEnd ,player , onPlay , index}){
+   
     let icon = <Icon/>
-    if(player === 'X'){
+    if(player === 'x'){
         icon = <Icon name="cross" />
     }
     else if(player === 'o'){
         icon= <Icon name="circle" />
     }
    return (
-    <div className='card' onClick={() => onPlay(index)}>
+    <div className='card' onClick={() => !gameEnd && player==="" && onPlay(index)}>
         {icon}
     </div>
    )
